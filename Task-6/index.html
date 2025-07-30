@@ -4,32 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="genarator">
-      <div>
-        <div class="rgb-wrapper">
-        <label>R:</label>
-        <input type="number" id="red" min="0" max="255" >
-        <input type="range" id="red" min="0" max="255" value="0"/>
+      <h1>Task-6</h1>
+      <div id="color-box" class="color-box"></div>
+      <div class="rgb-wrapper">
+        <div>
+          <label>R:</label>
+          <input
+            type="number"
+            min="0"
+            max="255"
+            id="r-num"
+            oninput="getInputNum()"
+          />
+          <input
+            type="range"
+            id="red"
+            min="0"
+            max="255"
+            value="0"
+            oninput="getColors()"
+          />
+        </div>
+        <div>
+          <label>G:</label>
+          <input
+            type="number"
+            min="0"
+            max="255"
+            id="g-num"
+            oninput="getInputNum()"
+          />
+          <input
+            type="range"
+            id="green"
+            min="0"
+            max="255"
+            value="0"
+            oninput="getColors()"
+          />
+        </div>
+        <div>
+          <label>B:</label>
+          <input
+            type="number"
+            min="0"
+            max="255"
+            id="b-num"
+            oninput="getInputNum()"
+          />
+          <input
+            type="range"
+            id="blue"
+            min="0"
+            max="255"
+            value="0"
+            oninput="getColors()"
+          />
+        </div>
+        <div class="generated-color">
+          <div id="rgb-value">RGB(0,0,0)</div>
+          <div class="color-disply"></div>
+        </div>
       </div>
-      <div>
-        <label>G:</label>
-        <input type="number" id="red" min="0" max="255">
-        <input type="range" id="green" min="0" max="255" value="0"/>
-      </div>
-      <div>
-        <label>B:</label>
-        <input type="number" id="red" min="0" max="255" />
-        <input type="range" id="blue" min="0" max="255" value="0"/>
-      </div>
-        <div class="genaratorted-color">
-        <div class="rgb-value">RGB(0,0,0)</div>
-        <div class="color-disply"></div>
     </div>
-      </div>
   </body>
-    </div>
-  
 </html>
