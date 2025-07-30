@@ -1,0 +1,22 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.genarator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(#54a5ca, #6df1e0);
+}
+.color-box {
+  width: 400px;
+  height: 50px;
+  margin-top: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
