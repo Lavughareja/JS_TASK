@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  gap: 10px;
+}
+.output {
+  color: brown;
+  font-size: x-large;
+}
+input {
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+input:focus {
+  border-color: skyblue;
+  outline: none;
+}
