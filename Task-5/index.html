@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dropdown-wrapper">
+        <label>Choose a Converter:</label>
+
+        <select id="converterselect" onchange="handleConverter()">
+          <option value="temperature">Temperature</option>
+          <option value="time">Time</option>
+          
+        </select>
+      </div>
+      <div class="converter-row" id="temperatureconverter">
+        <div class="input-group">
+          <input type="number" id="C1" oninput="CTOF()" />
+          <p>Celsius</p>
+        </div>
+        <div class="equal">=</div>
+        <div class="input-group">
+          <input type="number" id="F1" oninput="FTOC()" />
+          <p>Fahrenheit</p>
+        </div>
+      </div>
+
+   <div class="converter-row" id="timeconverter" style="display: none">
+        <div class="input-group">
+          <input type="number" id="S1" oninput="STOM()" />
+          <p>Second</p>
+        </div>
+        <div class="equal">=</div>
+        <div class="input-group">
+          <input type="number" id="M1" oninput="MTOS()" />
+          <p>Minute</p>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
