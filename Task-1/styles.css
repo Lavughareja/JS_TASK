@@ -1,0 +1,25 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.result-data {
+  color: brown;
+  font-size: x-large;
+}
+.inputbox {
+  border: 2px solid rgb(2, 2, 2);
+  height: 5vh;
+  width: 40vh;
+  border-radius: 10px;
+  padding: 0 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.inputbox:focus {
+  border-color: rgb(12, 177, 243);
+}
