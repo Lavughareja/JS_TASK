@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  gap: 25px;
+}
+button {
+  height: 30px;
+  width: 80px;
+}
+.counter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  height: 5%;
+  width: 15%;
+  background-color: black;
+  border-radius: 15px;
+}
+p {
+  color: white;
+  font-size: x-large;
+}
