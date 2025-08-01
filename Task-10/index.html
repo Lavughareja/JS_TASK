@@ -13,26 +13,54 @@
   </head>
   <body>
     <div class="form-wrapper">
-      <form name="myForm" onsubmit="return Validation()">
+      <form
+        id="form"
+        name="myForm"
+        onsubmit="return Validation()"
+        action="display.html"
+        method="GET"
+      >
         <h1 class="title">Project Registration Form</h1>
         <div>
-          Name : <input type="text" name="name" placeholder="Enter Your Name" />
+          Name :
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            id="name"
+          />
         </div>
         <div>
           URL :
-          <input type="text" name="URL" placeholder="Enter Your Project URL" />
+          <input
+            type="text"
+            name="URL"
+            placeholder="Enter Your Project URL"
+            id="URL"
+          />
         </div>
         <div>
           Funnel :
-          <input type="text" name="funnel" placeholder="Enter Your Funnel" />
+          <input
+            type="text"
+            name="funnel"
+            placeholder="Enter Your Funnel"
+            id="funnel"
+          />
         </div>
         <div>
           Email :
-          <input type="email" name="email" placeholder="Enter Your Email" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            id="email"
+          />
         </div>
         <div>
           Password :
           <input
+            id="password"
             type="password"
             name="password"
             placeholder="Enter Your Password"
@@ -41,34 +69,35 @@
         <div>
           Password Conformation :
           <input
+            id="conformationpassword"
             type="password"
             name="conformationpassword"
             placeholder="Enter Your Conformation Password"
           />
         </div>
         <div id="container" class="clone-wrapper">
-          <span id="clone-list">
+          <span class="clone-list">
             Number of Member :
             <input
               id="noofmemebr"
-              class="input-wrapper"
+              class="noofmemebr input-wrappe"
               type="number"
               name="noofmemebr"
               placeholder="Enter Your Number Of Member In Project" />
-            <span id="noofmemebr-error" class="error-message"></span>
+            <span class="noofmemebr-error error-message"></span>
 
             Percentage :
             <input
               id="percentage"
+              class="percentage"
               type="number"
               name="percentage"
               placeholder="Enter Your Percentage" />
-            <span id="percentage-error" class="error-message"></span>
+            <span class="percentage-error error-message"></span>
             <button
               type="button"
-              class="icon-button"
+              class="remove-button icon-button"
               title="Delete"
-              onclick="removeElement()"
             >
               <i class="fas fa-trash-alt"></i></button
           ></span>

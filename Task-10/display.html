@@ -4,6 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        gap: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div><span>Full Name :</span> <span id="fullname"></span></div>
+    <div><span>URL :</span> <span id="URL"></span></div>
+    <div><span>funnel :</span> <span id="funnel"></span></div>
+    <div><span>email :</span> <span id="email"></span></div>
+    <div><span>password :</span> <span id="password"></span></div>
+    <div>
+      <span>conformationpassword :</span>
+      <span id="conformationpassword"></span>
+    </div>
+    <div>
+      <span>Number Of Member :</span>
+      <span id="noofmember"></span>
+    </div>
+
+    <!--   <script>
+      document.getElementById("fullname").textContent =
+        localStorage.getItem("fullname") || "";
+      document.getElementById("URL").textContent =
+        localStorage.getItem("URL") || "";
+      document.getElementById("funnel").textContent =
+        localStorage.getItem("funnel") || "";
+      document.getElementById("email").textContent =
+        localStorage.getItem("email") || "";
+      document.getElementById("password").textContent =
+        localStorage.getItem("password") || "";
+      console.log(localStorage.getItem("password"));
+      document.getElementById("conformationpassword").textContent =
+        localStorage.getItem("conformationpassword") || "";
+      document.getElementById("noofmember").textContent =
+        localStorage.getItem("noofmember") || "";
+    </script> -->
+  </body>
 </html>
