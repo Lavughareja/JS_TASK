@@ -1,4 +1,4 @@
-function getColors() {
+function getInputSlider() {
   const redSlider = document.getElementById("red");
   const greenSlider = document.getElementById("green");
   const blueSlider = document.getElementById("blue");
